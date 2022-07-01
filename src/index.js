@@ -2,9 +2,9 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import CurrencyService from`./currency-service.js`
+import CurrencyService from './currency-service.js'
 
-function getConversion (response) {
+function getConversion (response, usd, ) {
   if (response.conversion_rates) {
     $(".rate").text(`${response.conversion_rates}`);
   } else {
@@ -13,8 +13,9 @@ function getConversion (response) {
 }
 
 $(document).ready(function() {
-  $("form#currency-exchange").submit(function(event) {
-    event.preventDefault();
+  $('#currency-exchange').submit(function() {
+    const currency = $('#user-currency').val
+    $('#user-currency').val
     CurrencyService.getExchange();
     .then(function(response) {
       getConversion(response);
