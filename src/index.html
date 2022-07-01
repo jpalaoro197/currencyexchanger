@@ -8,15 +8,17 @@
 </head>
 <body>
   <div class="container">
-    <form id="currency-exchange">
-      <h1>currency exchange</h1>
-      <label for="user-currency">enter USD amount</label>
-      <input id = "user-currency" type="number"> 
-      <button type="submit">submit</button>
-    </form>
+    <h1>currency exchange</h1>
+    <label for="user-currency">enter USD amount</label>
+    <input id = "user-currency" type="number"> 
+    <select id="selected-currency">
+      <option value="EUR">Euros</option>
+    </select>
+    <button class="btn-success" id="currency-exchange">submit</button>
+    
 
-    <h3 class="rate"></h3>
-    <h3 class="error"></h3>
+    <div id="rate"></div>
+    <div id="error"></div>
   </div>
 </body>
 </html>
