@@ -1,3 +1,4 @@
+import { get } from "jquery";
 import CurrencyService from `./currency-service.js`;
 
 function getConversion (response) {
@@ -8,3 +9,12 @@ function getConversion (response) {
   };
 };
 
+$(document).ready(function() {
+  $(`.submit`).submit(function(event) {
+    event.preventDefault();
+    CurrencyService.getExchange();
+    .then(function(response) {
+      getConversion(response);
+    });
+  });
+});
