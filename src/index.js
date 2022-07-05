@@ -19,7 +19,7 @@ async function callApi(selectedCurrency, usd) {
 }
 
 $(document).ready(function() {
-  $('#currency-exchange').submit(function() {
+  $('#form').submit(function() {
     event.preventDefault();
     let selectedCurrency = $("#selected-currency").val();
     let usd = parseFloat($("#user-currency").val());
