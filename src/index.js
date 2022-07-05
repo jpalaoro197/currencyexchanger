@@ -6,7 +6,7 @@ import CurrencyService from './currency-service.js';
 
 function getElements (response, usd, selectedCurrency ) {
   if (response.conversion_rates) {
-    const exchange = (usd / response.conversion_rates.USD);
+    const exchange = (usd / response.conversion_rates.USD).toFixed(2);
     $("#rate").text(`${exchange} ${selectedCurrency}`);
   } else {
     $("#error").text(`error occured: ${response.error_type}`);
