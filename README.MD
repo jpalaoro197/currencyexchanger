@@ -26,7 +26,7 @@ This is my week 6 epicodus project focused on api calls and using seperated js l
 
 1. Clone this repository to your desktop.
 2. Navigate to the top level of directory.
-3. Visit the <a href="https://www.exchangerate-api.com/docs/overview">ExchangeRate-API site</a>. Input your email address and click the "Get Free Key" button. You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!" At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month. then create a .nv file in project and paste you API key into it.
+3. Visit the <a href="https://www.exchangerate-api.com/docs/overview">ExchangeRate-API site</a>. Input your email address and click the "Get Free Key" button. You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!" At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month. then create a .env file in project and paste you API key into it.
 3. run npm install, npm start, and npm test to ensure you have the full program. 
 4. you'll now have your start to a new webpage, just add your user logic in src/index.html and you're off to the races.
 
